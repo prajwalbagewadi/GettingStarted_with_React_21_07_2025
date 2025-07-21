@@ -106,5 +106,14 @@ JSX expressions must have one parent element.
 You have two sibling elements (<h1> and <h2>) — JSX needs a single enclosing tag.
 
 ```
+function Home(){
+  return (
+    <div>
+      <h1>hello world 🌏</h1>
+      <h2>First React component.</h2>
+    </div>
+  );
+}
 
+export default Home;
 ```
