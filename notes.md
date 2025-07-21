@@ -66,6 +66,45 @@ package.json is the heart of any Node.js or JavaScript project — it’s a file
 ### De-clutter unwanted files:
 
 - /src
-- /src/assets
+- /src/assets/react.svg
 - /src/App.css
 - /src/index.css
+
+## create a hello world React Component:
+
+home.jsx
+
+```
+//Alteration 1:
+function Home() {
+  return <h1>hello world 🌏</h1>;
+}
+export default Home;
+```
+
+```
+
+//Alteration 2:
+function Home(){
+  return (
+    <h1>hello world 🌏</h1>
+    <h2>First React component.</h2>
+  );
+}
+
+export default Home;
+
+//Error:
+/*
+This will cause an error:
+JSX expressions must have one parent element.
+*/
+```
+
+### Fix: Wrap both elements in a parent element.
+
+You have two sibling elements (<h1> and <h2>) — JSX needs a single enclosing tag.
+
+```
+
+```
