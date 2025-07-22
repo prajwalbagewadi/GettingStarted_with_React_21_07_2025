@@ -103,7 +103,7 @@ JSX expressions must have one parent element.
 
 ### Fix: Wrap both elements in a parent element.
 
-You have two sibling elements (<h1> and <h2>) — JSX needs a single enclosing tag.
+You have two sibling elements (&lt;h1&gt; and &lt;h2&gt;) — JSX needs a single enclosing tag.
 
 ```
 function Home(){
